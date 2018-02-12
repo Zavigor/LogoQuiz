@@ -1,0 +1,552 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quizbackground"
+    tools:context="com.example.android.logoquiz.MainActivity">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo_logoquiz"
+            android:layout_width="240dp"
+            android:layout_height="230dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/quiz_logo_2" />
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_logoquiz"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Answering quiz questions, you will learn some secrets of professional logos"
+            android:textColor="#534961"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textCapWords"
+            android:textColor="#433249"
+            android:theme="@style/MyEditTextStyle2" />
+
+        <RelativeLayout
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/question_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/info_quiz_1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Guess the logo on the fragment"
+                    android:textColor="#534961"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/reebok1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/info_quiz_1"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/reebok1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reebok1"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <CheckBox
+                        android:id="@+id/nike_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#c29c75"
+                        android:paddingLeft="10dp"
+                        android:text="Nike"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/reebok_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#c29c75"
+                        android:paddingLeft="10dp"
+                        android:text="Reebok"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/sprandi_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#c29c75"
+                        android:paddingLeft="10dp"
+                        android:text="Sprandi"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/question_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/info_quiz_2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="What logo is visible in the distance?"
+                    android:textColor="#534961"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_quiz_2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/info_quiz_2"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/toyota1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_quiz_2"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <CheckBox
+                        android:id="@+id/mercedes_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#c29c75"
+                        android:paddingLeft="10dp"
+                        android:text="Mercedes"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/toyota_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#c29c75"
+                        android:paddingLeft="10dp"
+                        android:text="Toyota"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/mazda_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/name_input"
+                        android:layout_centerVertical="true"
+                        android:buttonTint="#c29c75"
+                        android:paddingLeft="10dp"
+                        android:text="Mazda"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/two"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/question_tree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/info_quiz_3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="What color combination is used in the Burger King logo?"
+                    android:textColor="#534961"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/bk_color_test"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info_quiz_3"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <ImageView
+                        android:id="@+id/img_quiz_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bkcolor1" />
+
+                    <ImageView
+                        android:id="@+id/img_quiz_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bkcolor2" />
+
+                    <ImageView
+                        android:id="@+id/img_quiz_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bkcolor3" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bk_color_test"
+                    android:orientation="horizontal"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <RadioButton
+                        android:id="@+id/bk_radiobutton_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="27dp"
+                        android:layout_weight="1"
+                        android:buttonTint="#c29c75"
+                        android:duplicateParentState="false"
+                        android:gravity="center"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/bk_radiobutton_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="27dp"
+                        android:layout_weight="1"
+                        android:buttonTint="#c29c75"
+                        android:gravity="center"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/bk_radiobutton_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="27dp"
+                        android:layout_weight="1"
+                        android:buttonTint="#c29c75"
+                        android:gravity="center"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tree"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/question_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/info_quiz_4"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Where is the correct Google logo?"
+                    android:textColor="#534961"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/google_test"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info_quiz_4"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <ImageView
+                        android:id="@+id/google1"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/google1" />
+
+                    <ImageView
+                        android:id="@+id/google2"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/google2" />
+
+                    <ImageView
+                        android:id="@+id/google3"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/google3" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/google_test"
+                    android:orientation="horizontal"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <RadioButton
+                        android:id="@+id/gl_radiobutton_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="27dp"
+                        android:layout_weight="1"
+                        android:buttonTint="#c29c75"
+                        android:duplicateParentState="false"
+                        android:gravity="center"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/gl_radiobutton_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="27dp"
+                        android:layout_weight="1"
+                        android:buttonTint="#c29c75"
+                        android:gravity="center"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/gl_radiobutton_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="27dp"
+                        android:layout_weight="1"
+                        android:buttonTint="#c29c75"
+                        android:gravity="center"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/four"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/check_button"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/question_five"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#4b2d7b"
+                android:onClick="get_an_answer"
+                android:text="check"
+                android:textColor="#ffffff" />
+
+            <RelativeLayout
+                android:id="@+id/score"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/check_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/score_display"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="#e42099"
+                    android:onClick="reset"
+                    android:text="reset"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/score_display"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:focusable="true"
+                    android:padding="20dp"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/question_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/info_quiz_5"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="This is the old company logo..."
+                    android:textColor="#534961"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/ibmold1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/info_quiz_5"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ibmold1" />
+
+                <EditText
+                    android:id="@+id/edit_ibm"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ibmold1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:ems="10"
+                    android:hint="Text"
+                    android:inputType="textCapWords"
+                    android:textColor="#433249"
+                    android:theme="@style/MyEditTextStyle2" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
